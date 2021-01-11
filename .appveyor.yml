@@ -1,6 +1,9 @@
 image:
+ - Visual Studio 2013
+ - Visual Studio 2015
  - Visual Studio 2017
  - Visual Studio 2019
+ - Visual Studio 2019 Preview
 environment:
   global:
     LIBRDKAFKA_NUGET_VERSION: 1.6.0-RC1
