@@ -1,3 +1,6 @@
+image:
+ - Visual Studio 2017
+ - Visual Studio 2019
 environment:
   global:
     LIBRDKAFKA_NUGET_VERSION: 1.6.0-RC1
