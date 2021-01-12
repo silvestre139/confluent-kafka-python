@@ -6,7 +6,8 @@ image:
 environment:
   global:
     LIBRDKAFKA_NUGET_VERSION: 1.6.0-RC1
-    CIBW_SKIP: cp27-* cp33-* cp34-* cp35-* cp36-* cp37-* cp38-* cp39-win32
+    CIBW_BUILD: cp38-win_amd64
+    CIBW_SKIP: cp27-* cp33-* cp34-* cp35-* cp36-* cp37-* cp39-*
     CIBW_TEST_REQUIRES: pytest pytest-timeout requests trivup
     # SDK v7.0 MSVC Express 2008's SetEnv.cmd script will fail if the
     # /E:ON and /V:ON options are not enabled in the batch script intepreter
@@ -18,9 +19,9 @@ environment:
 #     PYTHON_VERSION: "2.7.17"
 #     PYTHON_SHORTVER: "27"
 #     PYTHON_ARCH: "64"
-   - PYTHON: "C:\\Python39-x64"
-     PYTHON_VERSION: "3.9.0"
-     PYTHON_SHORTVER: "39"
+   - PYTHON: "C:\\Python38-x64"
+     PYTHON_VERSION: "3.8.6"
+     PYTHON_SHORTVER: "38"
      PYTHON_ARCH: "64"
      WHEEL_UPLOAD: true
 
